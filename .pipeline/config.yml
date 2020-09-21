@@ -7,11 +7,11 @@ general:
 ### Step-specific configuration
 steps:
   artifactPrepareVersion:
-    buildTool:'mta'
+    buildTool: 'mta'
   npmExecute:
-    dockerImage: 'ppiper/node-browsers:v2'
-  cloudFoundryDeploy:
     dockerImage: 'node:lts-stretch'
+  cloudFoundryDeploy:
+    dockerImage: 'ppiper/cf-cl'
     mtaDeployParameters: '-f --version-rule ALL'
   mtaBuild:
     mtaBuildTool: "cloudMbt"
