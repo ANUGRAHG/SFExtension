@@ -44,10 +44,10 @@ stages:
        
    productionDeployment:
     cfTargets:
-      - org:  'referenceapps-ecc'
+      - org:  'SFTestCW33'
         space: 'dev'
         appName: 'cloud-sf-extension-cap-sample'
-        apiEndpoint: 'https://api.cf.sap.hana.ondemand.com'
+        apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
         credentialsId: 'cf-c'
 
  
