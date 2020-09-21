@@ -9,7 +9,7 @@ steps:
   artifactSetVersion:
     commitVersion: false
     timestampTemplate: '%Y%m%d%H%M%S'
-  executeNpm:
+  npmExecute::
     dockerImage: 'ppiper/node-browsers:v2'
   cloudFoundryDeploy:
     dockerImage: 'ppiper/cf-cli'
