@@ -8,10 +8,11 @@ general:
 steps:
   artifactPrepareVersion:
     buildTool: 'mta'
-  npmExecute::
+  npmExecute:
     dockerImage: 'ppiper/node-browsers:v2'
   cloudFoundryDeploy:
     dockerImage: 'ppiper/cf-cli'
+    deployTool: 'mtaDeployPlugin'
     mtaDeployParameters: '-f --version-rule ALL'
   mtaBuild:
     mtaBuildTool: "cloudMbt"
