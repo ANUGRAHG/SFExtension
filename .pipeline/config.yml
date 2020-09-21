@@ -1,10 +1,7 @@
 ### General project setup
 general:
   unsafeMode: false
-  automaticVersioning: true
-  collectTelemetryData: false
   projectName: 'cloud-cap-s4ems-bp'
-  extensionRepository: 'https://github.com/SAP/cloud-s4-sdk-pipeline.git'
   productiveBranch: 'master'
 
 ### Step-specific configuration
