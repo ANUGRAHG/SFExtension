@@ -6,9 +6,8 @@ general:
 
 ### Step-specific configuration
 steps:
-  artifactSetVersion:
-    commitVersion: false
-    timestampTemplate: '%Y%m%d%H%M%S'
+  artifactPrepareVersion:
+    buildTool: 'mta'
   npmExecute::
     dockerImage: 'ppiper/node-browsers:v2'
   cloudFoundryDeploy:
