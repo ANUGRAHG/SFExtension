@@ -6,10 +6,11 @@ general:
 
 ### Step-specific configuration
 steps:
-  artifactPrepareVersion:
-    buildTool: 'mta'
-  npmExecute:
-    dockerImage: 'node:lts-stretch'
+  artifactSetVersion:
+    commitVersion: false
+    timestampTemplate: '%Y%m%d%H%M%S'
+  executeNpm:
+    dockerImage: 'ppiper/node-browsers:v2'
   cloudFoundryDeploy:
     dockerImage: 'ppiper/cf-cli'
     mtaDeployParameters: '-f --version-rule ALL'
