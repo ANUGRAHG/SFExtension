@@ -11,7 +11,7 @@ steps:
   npmExecute:
     dockerImage: 'node:lts-stretch'
   cloudFoundryDeploy:
-    dockerImage: 'ppiper/cf-cl'
+    dockerImage: 'ppiper/cf-cli'
     mtaDeployParameters: '-f --version-rule ALL'
   mtaBuild:
     mtaBuildTool: "cloudMbt"
